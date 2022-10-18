@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Glory</string>
+    <string name="login">Log In</string>
+    <string name="logEmail">"Enter your email"</string>
+    <string name="logPassword">"Enter your password"</string>
+    <string name="logo">glory logo</string>
+    <string name="logB">Log In</string>
+    <string name="loginButton">LOG IN</string>
+    <string name="helloWorld">HELLO WORLD</string>
+</resources>
