@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "713781012746",
+    "project_id": "glory-app-f96b7",
+    "storage_bucket": "glory-app-f96b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713781012746:android:db4f73c5b5751215ac72f3",
+        "android_client_info": {
+          "package_name": "com.example.glory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713781012746-mqvjkqn3dcl3li5uk4a2lo82cbsemjri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd0Ud5an6-wSOW11o8PshtwBhOG-aPVVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713781012746-mqvjkqn3dcl3li5uk4a2lo82cbsemjri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

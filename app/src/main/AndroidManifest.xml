@@ -14,16 +14,16 @@
         android:theme="@style/Theme.Glory"
         tools:targetApi="31">
         <activity
-            android:name=".dashboard"
+            android:name=".Dashboard"
             android:exported="false" />
         <activity
-            android:name=".signUp"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".LogActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".GetStartedActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
