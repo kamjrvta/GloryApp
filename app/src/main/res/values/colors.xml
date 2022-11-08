@@ -11,4 +11,6 @@
     <color name="buttonColor">#3F301D</color>
     <color name="coffee">#4B371B</color>
     <color name="peanut">#795C34</color>
+    <color name="lightest">#9A7B4F</color>
+    <color name="gray">#EDEDED</color>
 </resources>

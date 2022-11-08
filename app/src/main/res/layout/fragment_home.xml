@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".HomeFragment" >
+
+    <ImageButton
+        android:id="@+id/categoryAlbum"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|left"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+
+        android:contentDescription="@string/category_album"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/category_album" />
+
+    <ImageButton
+        android:id="@+id/alerts"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="115dp"
+        android:contentDescription="alerts"
+        android:cropToPadding="false"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/alerts" />
+
+    <ImageButton
+        android:id="@+id/addCategory"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="115dp"
+        android:contentDescription="alerts"
+        android:cropToPadding="false"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/create_category" />
+
+    <ImageButton
+        android:id="@+id/searchIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="alerts"
+        android:cropToPadding="false"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/top_cover" />
+
+
+</FrameLayout>
+
+

@@ -14,6 +14,21 @@
         android:theme="@style/Theme.Glory"
         tools:targetApi="31">
         <activity
+            android:name=".AddItem"
+            android:exported="false" />
+        <activity
+            android:name=".Alerts"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCategory"
+            android:exported="false" />
+        <activity
+            android:name=".Search"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryAlbum"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity

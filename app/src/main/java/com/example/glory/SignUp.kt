@@ -35,13 +35,13 @@ class SignUp : AppCompatActivity() {
         progressDialog.setCanceledOnTouchOutside(false)
 
         //handle log in
-        binding.signUpLink.setOnClickListener() {
+        binding.backToLogIn.setOnClickListener {
             //back to log in
             startActivity(Intent(this@SignUp, LogActivity ::class.java))
         }
 
         //handle sign up
-        binding.signUpBut.setOnClickListener() {
+        binding.sButton.setOnClickListener {
             /*Steps
             1. Input Data
             2. Validate Data
@@ -60,10 +60,10 @@ class SignUp : AppCompatActivity() {
 
     private fun validateData() {
         //Input Data
-        name = binding.name.text.toString().trim()
-        email = binding.email.text.toString().trim()
-        password = binding.password.text.toString().trim()
-        val cPassword = binding.cPassword.text.toString().trim()
+        name = binding.sName.text.toString().trim()
+        email = binding.sEmail.text.toString().trim()
+        password = binding.sPassword.text.toString().trim()
+        val cPassword = binding.scPassword.text.toString().trim()
 
         //validate Data
         if(name.isEmpty()){
@@ -121,15 +121,16 @@ class SignUp : AppCompatActivity() {
         val timestamp = System.currentTimeMillis()
 
         //get current user uid, since user is now registered so we can get it now
-        val uid =firebaseAuth.uid
+        val uid = firebaseAuth.uid
 
-        //set up date to add in db
-        val hashMap : HashMap<String, Any?> = HashMap()
+        //set up data to add in db
+        val hashMap: HashMap<String, Any?> = HashMap()
         hashMap["uid"] = uid
         hashMap["email"] = email
-        hashMap["name"]= name
+        hashMap["name"] = name
         hashMap["profileImage"] = "" // add empty, will do in profile edit
-        hashMap["userType"] = "user" //possible values are user/admin, will change value to admin manually
+        hashMap["userType"] =
+            "user" //possible values are user/admin, will change value to admin manually
         hashMap["timestamp"] = timestamp
 
         //set data to db
@@ -138,16 +139,18 @@ class SignUp : AppCompatActivity() {
             .setValue(hashMap)
             .addOnSuccessListener {
                 //user info saved, open dashboard
-                updateUserInfo()
+                progressDialog.dismiss()
                 Toast.makeText(this, "Account created ...", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this@SignUp, Dashboard ::class.java))
+                startActivity(Intent(this@SignUp, Dashboard::class.java))
                 finish()
             }
-            .addOnFailureListener{ e->
+            .addOnFailureListener { e ->
                 //failed saving user info to db
                 progressDialog.dismiss()
-                Toast.makeText(this, "Failed saving info due to ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Failed saving info due to ${e.message}", Toast.LENGTH_SHORT)
+                    .show()
             }
+
 
     }
 }
